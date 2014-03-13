@@ -1,0 +1,6 @@
+[submodule "coinbase-android-sdk"]
+	path = coinbase-android-sdk
+	url = https://github.com/coinprofit/coinbase-android-sdk.git
+[submodule "AndrOAuth"]
+	path = AndrOAuth
+	url = https://github.com/coinprofit/AndrOAuth.git

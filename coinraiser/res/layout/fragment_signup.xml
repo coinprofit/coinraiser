@@ -11,9 +11,16 @@
         android:text="Sign up for an account" />
 
     <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/password"
@@ -22,9 +29,21 @@
         android:inputType="textPassword" />
 
     <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up" />
+
+    <Button
         android:id="@+id/coinbase_connect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Connect with CoinBase" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
 
 </LinearLayout>
