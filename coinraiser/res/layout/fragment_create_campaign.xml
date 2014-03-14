@@ -2,30 +2,164 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_gray_bg"
     android:orientation="vertical" >
 
-    <EditText
-        android:id="@+id/campaign_name"
-        android:layout_width="match_parent"
+    <com.pfives.coinraiser.views.TextFontView
+        style="@style/Header"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="eg. Moms Against Evil, SF Privacy Protest, Jon&apos;s B-day" />
+        android:text="Campaign Name" />
 
-    <EditText
-        android:id="@+id/description"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="This is our campaign to raise money for... " />
+        android:background="@color/White"
+        android:orientation="vertical" >
 
-    <EditText
-        android:id="@+id/goal_amount"
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_gray" />
+
+        <EditText
+            android:id="@+id/campaign_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_padding"
+            android:hint="eg. SF Privacy Rally " />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_gray" />
+    </LinearLayout>
+
+    <com.pfives.coinraiser.views.TextFontView
+        style="@style/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="0.00" />
+        android:background="@color/White"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_gray" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_padding"
+            android:hint="This is a campaign to raise money for..."
+            android:lines="3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_gray" />
+    </LinearLayout>
+
+    <com.pfives.coinraiser.views.TextFontView
+        style="@style/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_gray" />
+
+        <EditText
+            android:id="@+id/goal_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_padding"
+            android:hint="0.00 mBTC" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large_padding"
+        android:layout_marginRight="@dimen/large_padding"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:orientation="horizontal" >
+
+        <com.pfives.coinraiser.views.SquareRelativeLayout
+            android:id="@+id/photo1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_weight="1"
+            android:background="@drawable/simple_square" >
+
+            <com.pfives.coinraiser.views.TextFontView
+                style="@style/LightFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:text="Upload Photo\r\n(optional)" />
+        </com.pfives.coinraiser.views.SquareRelativeLayout>
+
+        <com.pfives.coinraiser.views.SquareRelativeLayout
+            android:id="@+id/photo2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/medium_padding"
+            android:layout_weight="1"
+            android:background="@drawable/simple_square" >
+
+            <com.pfives.coinraiser.views.TextFontView
+                style="@style/LightFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:text="Upload Photo\r\n(optional)" />
+        </com.pfives.coinraiser.views.SquareRelativeLayout>
+
+        <com.pfives.coinraiser.views.SquareRelativeLayout
+            android:id="@+id/photo3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/simple_square" >
+
+            <com.pfives.coinraiser.views.TextFontView
+                style="@style/LightFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:text="Upload Photo\r\n(optional)" />
+        </com.pfives.coinraiser.views.SquareRelativeLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/launch_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding"
         android:text="Launch" />
 
 </LinearLayout>

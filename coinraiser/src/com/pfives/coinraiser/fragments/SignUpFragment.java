@@ -90,12 +90,14 @@ public class SignUpFragment extends Fragment {
 				
 				@Override
 				public void onSuccess(ApiResponse response) {
-					Log.v("into","sign up succeeded: "+response.getResponseString());	
+					Log.v("into","sign up succeeded: "+response.getResponseString());
+					Log.v("into","Also a code: "+response.getResponseCode());
 				}
 				
 				@Override
 				public void onFailure(ApiResponse result) {
 					Log.v("into","sign up failed: "+result.getResponseString());
+					Log.v("into","Also a code: "+result.getResponseCode());
 				}
 			});
 		}else{

@@ -1,15 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingTop="?android:attr/actionBarSize" >
-    
 
-    <TextView 
+    <LinearLayout
+        android:id="@+id/no_campaigns_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My Campaigns"
-        />
-    
-</LinearLayout>
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.pfives.coinraiser.views.TextFontView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="No Campaigns Yet" />
+
+        <Button
+            android:id="@+id/launch_campaign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Launch New Campaign" />
+
+        <com.pfives.coinraiser.views.TextFontView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="-or-" />
+
+        <Button
+            android:id="@+id/tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Launch New Campaign" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/campaigns_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_submit_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/White"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/bottom_connect_coinbase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/normal_padding" />
+    </RelativeLayout>
+
+</RelativeLayout>

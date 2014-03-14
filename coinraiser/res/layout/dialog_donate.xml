@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0.00 mBTC" />
+
+    <LinearLayout
+        android:id="@+id/not_connected_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.pfives.coinraiser.views.TextFontView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_connected_donate" />
+
+        <Button
+            android:id="@+id/connect_coinbase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect with CoinBase" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/connected_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.pfives.coinraiser.views.TextFontView
+            android:id="@+id/bitcoin_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pledge_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pledge" />
+
+</LinearLayout>

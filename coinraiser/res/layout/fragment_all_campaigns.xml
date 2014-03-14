@@ -5,15 +5,26 @@
     android:orientation="vertical"
     android:paddingTop="?android:attr/actionBarSize" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@+id/campaigns_list"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="All Campaigns" />
+        android:divider="@null" />
 
-    <Button
-        android:id="@+id/create_campaign"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/bottom_submit_container"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Launch Campaign" />
+        android:layout_alignParentBottom="true"
+        android:background="@color/White"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/bottom_connect_coinbase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/normal_padding" />
+    </RelativeLayout>
 
 </LinearLayout>

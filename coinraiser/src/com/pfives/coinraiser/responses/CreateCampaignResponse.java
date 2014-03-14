@@ -7,4 +7,7 @@ public class CreateCampaignResponse {
 	@JsonProperty("result")
 	private String result;
 	
+//	@JsonProperty("campaign")
+//	private Campaign campaign;
+	
 }

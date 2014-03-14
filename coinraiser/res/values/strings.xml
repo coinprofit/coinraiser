@@ -4,5 +4,6 @@
     <string name="app_name">coinraiser</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="not_connected_donate">Note: You will <b>not</b> actually donate until you connect your CoinBase account. Any pledges you make now will be recorded and you will have the chance to confirm them once you connect.</string>
 
 </resources>

@@ -10,6 +10,8 @@ import android.support.v4.app.FragmentTransaction;
 
 public class CampaignDetailActivity extends FragmentActivity{
 
+	public static final String CAMPAIGN_ID = "campaign_id";
+	
 	@Override
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);

@@ -17,4 +17,28 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="LightFont">
+        <item name="customFont">Roboto-Light.ttf</item>
+    </style>
+    
+    <style name="CondensedFont">
+        <item name="customFont">RobotoCondensed-Regular.ttf</item>
+    </style>
+    
+    <style name="Header" parent="CondensedFont">
+        <item name="android:layout_marginLeft">@dimen/normal_padding</item>
+        <item name="android:layout_marginTop">@dimen/medium_padding</item>
+        <item name="android:layout_marginBottom">@dimen/small_padding</item>
+        <item name="android:textColor">@color/Three</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="SettingsCell" parent="LightFont">
+        <item name="android:paddingBottom">@dimen/normal_padding</item>
+        <item name="android:paddingTop">@dimen/normal_padding</item>        
+        <item name="android:layout_marginLeft">@dimen/normal_padding</item>
+    </style>
+    
+    
+    
 </resources>
